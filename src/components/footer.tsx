@@ -2,12 +2,12 @@ import styles from "../app/page.module.css";
 
 export default function Footer() {
   return (
-    <div className={styles.footer__container}>
+    <footer className={styles.footer__container}>
       <p className={styles.first__text}>
-        Application created by Alexis Contente | With NextJS
+        Created by Alexis Contente | With NextJS
       </p>
       <p className={styles.second__text}>
-        Follow me on my{" "}
+        Follow me on{" "}
         <a
           className={styles.social__media}
           href="https://github.com/Alexis-Contente"
@@ -24,6 +24,6 @@ export default function Footer() {
           LinkedIn
         </a>
       </p>
-    </div>
+    </footer>
   );
 }
