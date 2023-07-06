@@ -1,6 +1,6 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import React from "react";
+import Header from "../components/header";
 
 export default function Home() {
-  return <h1 className={styles.title}>HELLO</h1>;
+  return <Header />;
 }
