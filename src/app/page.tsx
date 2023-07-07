@@ -1,9 +1,5 @@
 import React from "react";
 import styles from "../app/page.module.css";
-import Image from "next/image";
-import AppPhoto from "../../public/images/appareil_photo.jpg";
-import Micro from "../../public/images/microphone.jpg";
-import Link from "next/link";
 
 export default function Home() {
   return (

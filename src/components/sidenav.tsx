@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../app/page.module.css";
 
 export default function Sidenav() {
@@ -10,7 +11,7 @@ export default function Sidenav() {
         <a href="">Photos</a>
       </li>
       <li className={styles.list__item}>
-        <a href="">About</a>
+        <Link href="/about">About</Link>
       </li>
       <li className={styles.list__item}>
         <a href="">Follow</a>

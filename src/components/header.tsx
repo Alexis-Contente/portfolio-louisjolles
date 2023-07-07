@@ -5,6 +5,7 @@ import styles from "../app/page.module.css";
 import Image from "next/image";
 import BurgerMenu from "../../public/images/icons8-menu-rounded-50.png";
 import Sidenav from "./sidenav";
+import Link from "next/link";
 
 export default function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -29,7 +30,11 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <h1 className={styles.title}>Louis Jollès</h1>
+      <h1>
+        <Link className={styles.title} href="/">
+          Louis Jollès
+        </Link>
+      </h1>
       <nav className={styles.nav}>
         <Image
           className={styles.burger__menu}
