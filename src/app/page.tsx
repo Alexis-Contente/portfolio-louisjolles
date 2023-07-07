@@ -8,26 +8,13 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <main className={styles.home__container}>
-        <div className={styles.img__container}>
-          <h2 className={styles.title__photos}>Photos</h2>
-          <Link href="/photos">
-            <Image
-              className={styles.img}
-              src={AppPhoto}
-              alt="Image d'un appareil photo"
-            ></Image>
-          </Link>
-        </div>
-        <div className={styles.img__container}>
-          <h2 className={styles.title__musics}>Musics</h2>
-          <Link href="/musics">
-            <Image
-              className={styles.img}
-              src={Micro}
-              alt="Image d'un micro"
-            ></Image>
-          </Link>
+      <main className={styles.home}>
+        <div className={styles.home__container}>
+          <h1 className={styles.title}>Bonjour</h1>
+          <p className={styles.intro}>
+            Je suis Louis Jollès, guitariste expérimenté et fan de photographie.
+          </p>
+          <p className={styles.intro}>Bienvenue dans mon monde.</p>
         </div>
       </main>
     </>
