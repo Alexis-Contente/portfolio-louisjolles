@@ -31,7 +31,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <h1>
-        <Link className={styles.title} href="/">
+        <Link className={styles.name} href="/">
           Louis Jollès
         </Link>
       </h1>
