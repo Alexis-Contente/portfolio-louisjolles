@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import styles from "../page.module.css";
 import Image from "next/image";
-import Profil from "../../../public/images/profil.png";
+import Profil from "../../../public/data/images/profil.png";
 
 export default function About() {
   return (
@@ -36,14 +36,13 @@ export default function About() {
           <span className={styles.bold}>enregistrements courts</span>, divers et
           variés.
           <br />
-          J'entretiens à ce jour cette <span className={styles.bold}></span>
-          passion créative des{" "}
-          <span className={styles.bold}>boucles mélodiques</span>
-          et de l'<span className={styles.bold}>expérimentation</span>.
+          J'entretiens à ce jour cette{" "}
+          <span className={styles.bold}>passion créative</span> des{" "}
+          <span className={styles.bold}>boucles mélodiques</span> et de l'
+          <span className={styles.bold}>expérimentation</span>.
           <br />
           Plus récemment, je me suis pris de passion pour la{" "}
-          <span className={styles.bold}>photographie</span>
-          argentique.
+          <span className={styles.bold}>photographie</span> argentique.
           <br />
           Cette nouvelle activité me permet de reconnecter règulièrement mon
           environnement à mon imaginaire, de façon libre et indépendante.
