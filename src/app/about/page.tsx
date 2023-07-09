@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import styles from "../page.module.css";
+import styles from "../../../public/style/about.module.css";
 import Image from "next/image";
 import Profil from "../../../public/data/images/profil.png";
 

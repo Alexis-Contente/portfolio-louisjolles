@@ -52,7 +52,7 @@
   .about__container {
     display: flex;
     flex-direction: row;
-    margin: 75px 300px auto 300px;
+    margin: 75px 300px 75px 300px;
     padding: 50px;
   }
 

@@ -3,16 +3,54 @@
 .follow__container {
   background-color: white;
   background: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.under__container {
+  display: flex;
+  flex-direction: column;
+  /* width: 450px; */
 }
 
 .linkedin,
 .skype,
 .email {
   display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  transition: transform 0.5s;
+}
+
+.linkedin:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.1);
+}
+.skype:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.1);
+}
+.email:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.1);
+}
+
+.linkedin,
+.skype {
+  margin-bottom: 50px;
 }
 
 .link {
   text-transform: uppercase;
+}
+
+.icon {
+  margin-right: 15px;
 }
 
 @media screen and (min-width: 900px) {
@@ -22,8 +60,25 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 899px) {
+  .follow__container {
+    margin: 75px;
+    padding: 50px;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .follow__container {
+    margin: 25px;
+  }
+
+  .linkedin,
+  .skype,
+  .email {
+    flex-direction: column;
+  }
+
+  .link {
+    font-size: 0.6rem;
+  }
 }
