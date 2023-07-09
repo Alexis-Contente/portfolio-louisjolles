@@ -1,0 +1,29 @@
+/* FOLLOW COMPONENT */
+
+.follow__container {
+  background-color: white;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.linkedin,
+.skype,
+.email {
+  display: flex;
+}
+
+.link {
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 900px) {
+  .follow__container {
+    margin: 75px 300px 75px 300px;
+    padding: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (max-width: 767px) {
+}

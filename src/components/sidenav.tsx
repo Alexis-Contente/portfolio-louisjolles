@@ -11,7 +11,7 @@ export default function Sidenav() {
         <Link href="/about">About</Link>
       </li>
       <li className={styles.list__item}>
-        <a href="">Follow</a>
+        <Link href="/follow">Follow</Link>
       </li>
     </ul>
   );
