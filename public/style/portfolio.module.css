@@ -1,0 +1,37 @@
+/* PORTFOLIO COMPONENT */
+
+.portfolio__container {
+  display: flex;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.musics__container,
+.photos__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.categorie {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.image {
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 900px) {
+  .portfolio__container {
+    margin: 75px 300px 75px 300px;
+    padding: 50px;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (max-width: 767px) {
+}
