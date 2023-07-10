@@ -10,12 +10,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-decoration: none;
+  transition: transform 0.5s;
+}
+
+.musics__container:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.photos__container:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .categorie {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 3px;
+  color: black;
 }
 
 .image {
@@ -30,8 +45,29 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 899px) {
+  .portfolio__container {
+    flex-direction: column;
+    margin: 100px 50px;
+  }
+
+  .musics__container,
+  .photos__container {
+    margin-top: 50px;
+  }
+
+  .photos__container {
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .portfolio__container {
+    margin: 50px 25px;
+  }
+
+  .image {
+    width: 200px;
+    height: auto;
+  }
 }
