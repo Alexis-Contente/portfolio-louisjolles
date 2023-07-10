@@ -1,5 +1,11 @@
 /* PORTFOLIO COMPONENT */
 
+.portfolio__page {
+  /* display: flex; */
+  /* align-items: center;
+  width: auto; */
+}
+
 .portfolio__container {
   display: flex;
   background: rgba(255, 255, 255, 0.7);

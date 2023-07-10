@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Portfolio() {
   return (
-    <>
+    <div className={styles.portfolio__page}>
       <div className={styles.portfolio__container}>
         <Link className={styles.musics__container} href={"/categorie-musics"}>
           <p className={styles.categorie}>Musics</p>
@@ -25,6 +25,6 @@ export default function Portfolio() {
           ></Image>
         </Link>
       </div>
-    </>
+    </div>
   );
 }
