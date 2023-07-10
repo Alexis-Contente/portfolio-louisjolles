@@ -1,5 +1,11 @@
 /* FOLLOW COMPONENT */
 
+.follow__page {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
 .follow__container {
   background-color: white;
   background: rgba(255, 255, 255, 0.6);
@@ -15,6 +21,7 @@
 }
 
 .linkedin,
+.soundcloud,
 .skype,
 .email {
   display: flex;
@@ -25,6 +32,11 @@
 }
 
 .linkedin:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.1);
+}
+.soundcloud:hover {
   -ms-transform: scale(1.2);
   -webkit-transform: scale(1.2);
   transform: scale(1.1);
@@ -41,6 +53,7 @@
 }
 
 .linkedin,
+.soundcloud,
 .skype {
   margin-bottom: 50px;
 }
@@ -55,7 +68,8 @@
 
 @media screen and (min-width: 900px) {
   .follow__container {
-    margin: 75px 300px 75px 300px;
+    width: 700px;
+    margin: 100px;
     padding: 50px;
   }
 }
@@ -64,6 +78,7 @@
   .follow__container {
     margin: 75px;
     padding: 50px;
+    height: 500px;
   }
 }
 
@@ -73,6 +88,7 @@
   }
 
   .linkedin,
+  .soundcloud,
   .skype,
   .email {
     flex-direction: column;

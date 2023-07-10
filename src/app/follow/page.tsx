@@ -1,13 +1,14 @@
 import styles from "../../../public/style/follow.module.css";
 import Image from "next/image";
 import LinkedIn from "../../../public/data/images/linkedin-50.png";
+import SoundCloud from "../../../public/data/images/soundcloud-50.png";
 import Skype from "../../../public/data/images/skype-50.png";
 import Email from "../../../public/data/images/email-50.png";
 import Link from "next/link";
 
 export default function Follow() {
   return (
-    <>
+    <div className={styles.follow__page}>
       <div className={styles.follow__container}>
         <div className={styles.under__container}>
           <Link
@@ -23,6 +24,18 @@ export default function Follow() {
             <p className={styles.link}>
               https://www.linkedin.com/in/louisjolles/
             </p>
+          </Link>
+          <Link
+            className={styles.soundcloud}
+            href="https://soundcloud.com/user-743590682"
+            target="blank"
+          >
+            <Image
+              className={styles.icon}
+              src={SoundCloud}
+              alt="Icône de Linkedin"
+            ></Image>
+            <p className={styles.link}>https://soundcloud.com/user-743590682</p>
           </Link>
           <a className={styles.skype} href="skype:live:louisjolles?call">
             <Image
@@ -45,6 +58,6 @@ export default function Follow() {
           </a>
         </div>
       </div>
-    </>
+    </div>
   );
 }
