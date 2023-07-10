@@ -1,5 +1,10 @@
 /* ABOUT COMPONENT */
 
+.about__page {
+  display: flex;
+  align-items: center;
+}
+
 .about__container {
   background-color: white;
   background: rgba(255, 255, 255, 0.6);
@@ -52,7 +57,7 @@
   .about__container {
     display: flex;
     flex-direction: row;
-    margin: 75px 300px 75px 300px;
+    /* margin: 75px 300px 75px 300px; */
     padding: 50px;
   }
 

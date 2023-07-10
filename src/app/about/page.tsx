@@ -5,7 +5,7 @@ import Profil from "../../../public/data/images/profil.png";
 
 export default function About() {
   return (
-    <>
+    <div className={styles.about__page}>
       <div className={styles.about__container}>
         <Image
           className={styles.profil}
@@ -48,6 +48,6 @@ export default function About() {
           environnement à mon imaginaire, de façon libre et indépendante.
         </p>
       </div>
-    </>
+    </div>
   );
 }
