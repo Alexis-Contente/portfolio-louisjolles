@@ -6,17 +6,17 @@ import styles from "../../../public/style/musics.module.css";
 export default function Musics() {
   const [loops, setLoops] = useState(false);
   const handleClickLoops = () => {
-    setLoops(true);
+    setLoops(!loops);
   };
 
   const [productions, setProductions] = useState(false);
   const handleClickProductions = () => {
-    setProductions(true);
+    setProductions(!productions);
   };
 
   const [speedCompositions, setSpeedCompositions] = useState(false);
   const handleClickSpeedCompositions = () => {
-    setSpeedCompositions(true);
+    setSpeedCompositions(!speedCompositions);
   };
 
   return (
@@ -208,7 +208,7 @@ export default function Musics() {
           Speed compositions
         </button>
         {speedCompositions && (
-          <div className={styles.speed_compositions}>
+          <div className={styles.speed__compositions}>
             <iframe
               className={styles.sound}
               //   scrolling="no"
