@@ -8,7 +8,7 @@ export default function Portfolio() {
   return (
     <div className={styles.portfolio__page}>
       <div className={styles.portfolio__container}>
-        <Link className={styles.musics__container} href={"/categorie-musics"}>
+        <Link className={styles.musics__container} href={"/musics"}>
           <p className={styles.categorie}>Musics</p>
           <Image
             className={styles.image}
