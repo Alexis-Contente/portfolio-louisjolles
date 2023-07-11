@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "../../public/style/header.module.css";
 import Image from "next/image";
-import BurgerMenu from "../../public/data/images/icons8-menu-rounded-50.png";
+import BurgerMenu from "../data/images/icons8-menu-rounded-50.png";
 import Sidenav from "./sidenav";
 import Link from "next/link";
 

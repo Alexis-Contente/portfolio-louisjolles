@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import styles from "../../../public/style/about.module.css";
 import Image from "next/image";
-import Profil from "../../../public/data/images/profil.png";
+import Profil from "../../data/images/profil.png";
 
 export default function About() {
   return (

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import styles from "../../../public/style/musics.module.css";
+import database from "../../db.json";
 
 export default function Musics() {
   const [loops, setLoops] = useState(false);
@@ -27,117 +28,16 @@ export default function Musics() {
         </button>
         {loops && (
           <div className={styles.loops}>
-            <iframe
-              className={styles.sound}
-              //   scrolling="no"
-              //   frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1232932198&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
-            <iframe
-              className={styles.sound}
-              //   scrolling="no"
-              //   frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1232932201&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
-            <iframe
-              className={styles.sound}
-              //   scrolling="no"
-              //   frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/502320840&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
-            <iframe
-              className={styles.sound}
-              //   scrolling="no"
-              //   frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1232932216&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
-            <iframe
-              className={styles.sound}
-              //   scrolling="no"
-              //   frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1232932204&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
-            <iframe
-              className={styles.sound}
-              //   scrolling="no"
-              //   frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1232932207&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
-            <iframe
-              className={styles.sound}
-              //   scrolling="no"
-              //   frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/502321878&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
-            <iframe
-              className={styles.sound}
-              //   scrolling="no"
-              //   frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1232932195&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
-            <iframe
-              className={styles.sound}
-              //   scrolling="no"
-              //   frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/502321569&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
-
-            <iframe
-              className={styles.sound}
-              //   scrolling="no"
-              //   frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/502321710&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
-
-            <iframe
-              className={styles.sound}
-              //   scrolling="no"
-              //   frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/502321602&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
-
-            <iframe
-              className={styles.sound}
-              //   scrolling="no"
-              //   frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/502318923&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
-
-            <iframe
-              className={styles.sound}
-              //   scrolling="no"
-              //   frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/561345954&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
-
-            <iframe
-              className={styles.sound}
-              //   scrolling="no"
-              //   frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/502322394&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
-
-            <iframe
-              className={styles.sound}
-              //   scrolling="no"
-              //   frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/502322229&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
+            {database.loops.map((loop) => (
+              <iframe
+                key={loop.id}
+                className={styles.sound}
+                //   scrolling="no"
+                //   frameborder="no"
+                allow="autoplay"
+                src={loop.src}
+              ></iframe>
+            ))}
           </div>
         )}
 
@@ -146,61 +46,16 @@ export default function Musics() {
         </button>
         {productions && (
           <div className={styles.productions}>
-            <iframe
-              className={styles.sound}
-              //   scrolling="no"
-              //   frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/515346213&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-            ></iframe>
-
-            <iframe
-              className={styles.sound}
-              //   scrolling="no"
-              //   frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1232932210&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-            ></iframe>
-
-            <iframe
-              className={styles.sound}
-              //   scrolling="no"
-              //   frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1232932219&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-            ></iframe>
-
-            <iframe
-              className={styles.sound}
-              //   scrolling="no"
-              //   frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/645405018&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-            ></iframe>
-
-            <iframe
-              className={styles.sound}
-              //   scrolling="no"
-              //   frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/503930226&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-            ></iframe>
-
-            <iframe
-              className={styles.sound}
-              //   scrolling="no"
-              //   frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/509493126&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-            ></iframe>
-
-            <iframe
-              className={styles.sound}
-              //   scrolling="no"
-              //   frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/502307226&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-            ></iframe>
+            {database.productions.map((production) => (
+              <iframe
+                key={production.id}
+                className={styles.sound}
+                //   scrolling="no"
+                //   frameborder="no"
+                allow="autoplay"
+                src={production.src}
+              ></iframe>
+            ))}
           </div>
         )}
 
@@ -209,21 +64,16 @@ export default function Musics() {
         </button>
         {speedCompositions && (
           <div className={styles.speed__compositions}>
-            <iframe
-              className={styles.sound}
-              //   scrolling="no"
-              //   frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/503931546&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-            ></iframe>
-
-            <iframe
-              className={styles.sound}
-              //   scrolling="no"
-              //   frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/503932014&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-            ></iframe>
+            {database["speed-compositions"].map((composition) => (
+              <iframe
+                key={composition.id}
+                className={styles.sound}
+                //   scrolling="no"
+                //   frameborder="no"
+                allow="autoplay"
+                src={composition.src}
+              ></iframe>
+            ))}
           </div>
         )}
       </div>

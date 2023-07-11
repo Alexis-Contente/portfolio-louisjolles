@@ -1,9 +1,9 @@
 import styles from "../../../public/style/follow.module.css";
 import Image from "next/image";
-import LinkedIn from "../../../public/data/images/linkedin-50.png";
-import SoundCloud from "../../../public/data/images/soundcloud-50.png";
-import Skype from "../../../public/data/images/skype-50.png";
-import Email from "../../../public/data/images/email-50.png";
+import LinkedIn from "../../data/images/linkedin-50.png";
+import SoundCloud from "../../data/images/soundcloud-50.png";
+import Skype from "../../data/images/skype-50.png";
+import Email from "../../data/images/email-50.png";
 import Link from "next/link";
 
 export default function Follow() {
