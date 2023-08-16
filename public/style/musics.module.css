@@ -1,7 +1,6 @@
 .musics__page {
   display: flex;
   justify-content: center;
-  margin: 75px 500px;
 }
 
 .musics__container {
@@ -16,7 +15,6 @@
 .type {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.4rem;
   letter-spacing: 2px;
   border: none;
   color: white;
@@ -63,17 +61,45 @@
 }
 
 @media screen and (min-width: 900px) {
+  .musics__page {
+    margin: 75px 500px;
+  }
+
   .musics__container {
-    width: 90%;
+    width: 100%;
+  }
+
+  .type {
+    font-size: 1.4rem;
   }
 
   .sound {
-    margin: 50px 0;
+    margin: 10px 0;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 899px) {
+  .musics__container {
+    width: 75%;
+    margin-top: 100px;
+  }
+
+  .sound {
+    width: 550px;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .musics__container {
+    width: 80%;
+    margin-top: 30px;
+  }
+
+  .type {
+    font-size: 0.75rem;
+  }
+
+  .sound {
+    width: 300px;
+  }
 }
