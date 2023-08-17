@@ -1,0 +1,12 @@
+.photos_container {
+  margin: 100px 200px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+
+.item {
+  width: 300px;
+  height: auto;
+}
