@@ -1,12 +1,29 @@
-.photos_container {
-  margin: 100px 200px;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
-  justify-items: center;
+.photo__container {
+  max-width: 100wh;
+  margin: 20px 0;
+}
+
+.photo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .item {
   width: 300px;
-  height: auto;
+  height: 500px;
+  object-fit: cover;
+  margin: 10px;
+  border-radius: 10px;
+  transition: transform 0.1s;
+}
+
+.item:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(0.9);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
