@@ -14,6 +14,7 @@ Ceci est un portfolio, créé avec Next.js pour la partie front-end, CSS pour la
 📦 Prérequis
 🚀 Installation
 🛠️ Utilisation
+🗄 Structure de la base de données
 🤝 Contribution
 📝 Licence
 
@@ -52,6 +53,46 @@ Ceci est un portfolio, créé avec Next.js pour la partie front-end, CSS pour la
 3. **Explorer la galerie de photos** : Allez dans la section "Photos" pour visualiser les créations visuelles.
 4. **Écouter mes créations musicales** : Dirigez-vous vers la section "Musics" pour écouter les compositions.
 5. **Me contacter** : Consultez la section "Contacts" pour avoir accès aux liens des réseaux sociaux.
+
+## 🗄 Structure de la base de données
+
+### Table : `Loops`
+
+Cette table stocke les loops de la catégorie Musics.
+
+| Champ | Type         | Description                       |
+| ----- | ------------ | --------------------------------- |
+| ID    | INT          | Identifiant unique de la musique. |
+| Src   | VARCHAR(255) | URL absolu de la musique.         |
+
+### Table : `Productions`
+
+Cette table stocke les productions de la catégorie Musics.
+
+| Champ | Type         | Description                       |
+| ----- | ------------ | --------------------------------- |
+| ID    | INT          | Identifiant unique de la musique. |
+| Src   | VARCHAR(255) | URL absolu de la musique.         |
+
+### Table : `Speed-compositions`
+
+Cette table stocke les speed-compositions de la catégorie Musics.
+
+| Champ | Type         | Description                       |
+| ----- | ------------ | --------------------------------- |
+| ID    | INT          | Identifiant unique de la musique. |
+| Src   | VARCHAR(255) | URL absolu de la musique.         |
+
+### Table : `Photos`
+
+Cette table stocke les photos de la catégorie Photos.
+
+| Champ  | Type         | Description                     |
+| ------ | ------------ | ------------------------------- |
+| ID     | INT          | Identifiant unique de la photo. |
+| Src    | VARCHAR(255) | URL de la photo                 |
+| Width  | INT          | Largeur de la photo en px.      |
+| Height | INT          | Hauteur de la photo en px.      |
 
 ## 🤝 Contribution
 
