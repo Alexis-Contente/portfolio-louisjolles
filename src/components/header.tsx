@@ -8,6 +8,7 @@ import Sidenav from "./sidenav";
 import Link from "next/link";
 
 export default function Header() {
+  // FUNCTION THAT DISPLAY BURGER MENU ON SMALL SCREENS
   const [toggleMenu, setToggleMenu] = useState(false);
   const [screenWidth, setScreenWidth] = useState(0);
 

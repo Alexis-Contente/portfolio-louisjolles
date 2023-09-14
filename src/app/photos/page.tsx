@@ -10,6 +10,7 @@ import { useState } from "react";
 const images = database.photos;
 
 export default function Photos() {
+  // HANDLES THAT DISPLAY MODAL OF A SELECTED IMAGE
   const [selectedImageId, setSelectedImageId] = useState(null);
   const [showModal, setShowModal] = useState(false);
 
@@ -18,6 +19,7 @@ export default function Photos() {
     setShowModal(true);
   };
 
+  // HANDLES THAT DISPLAY PREVIOUS AND NEXT IMAGE
   const handlePrevClick = () => {
     const currentIndex = images.findIndex(
       (image) => image.id === selectedImageId

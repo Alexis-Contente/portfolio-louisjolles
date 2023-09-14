@@ -5,6 +5,7 @@ import styles from "../../../public/style/musics.module.css";
 import database from "../../db.json";
 
 export default function Musics() {
+  // HANDLES THAT DISPLAY A CATEGORY OF MUSIC
   const [loops, setLoops] = useState(false);
   const handleClickLoops = () => {
     setLoops(!loops);
