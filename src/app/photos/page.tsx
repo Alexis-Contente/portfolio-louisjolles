@@ -14,7 +14,7 @@ export default function Photos() {
   const [selectedImageId, setSelectedImageId] = useState(null);
   const [showModal, setShowModal] = useState(false);
 
-  const handleClick = (id) => {
+  const handleClick = (id: number) => {
     setSelectedImageId(id);
     setShowModal(true);
   };
