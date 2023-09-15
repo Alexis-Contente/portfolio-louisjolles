@@ -8,15 +8,15 @@ Ceci est un portfolio, créé avec Next.js pour la partie front-end, CSS pour la
 
 ## 📔 Table des matières
 
-🪧 À propos
-🔧 Fonctionnalités
-🏗️ Technologies Utilisées
-📦 Prérequis
-🚀 Installation
-🛠️ Utilisation
-🗄 Structure de la base de données
-🤝 Contribution
-📝 Licence
+- 🪧 À propos
+- 🔧 Fonctionnalités
+- 🏗️ Technologies Utilisées
+- 📦 Prérequis
+- 🚀 Installation
+- 🛠️ Utilisation
+- 🗄 Structure de la base de données
+- 🤝 Contribution
+- 📝 Licence
 
 ## 🔧 Fonctionnalités
 
