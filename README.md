@@ -94,16 +94,6 @@ Cette table stocke les photos de la catégorie Photos.
 | Width  | INT          | Largeur de la photo en px.      |
 | Height | INT          | Hauteur de la photo en px.      |
 
-## 🤝 Contribution
-
-Les contributions sont les bienvenues ! Si vous souhaitez apporter des améliorations à ce portfolio, veuillez suivre ces étapes :
-
-1. Forkez le projet
-2. Créez une nouvelle branche (`git checkout -b ameliorations/NomDeLaFonctionnalite`)
-3. Committez vos changements (`git commit -m 'Ajout de la fonctionnalité X'`)
-4. Pushez la branche (`git push origin ameliorations/NomDeLaFonctionnalite`)
-5. Ouvrez une Pull Request
-
 ## 📝 Licence
 
 Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
