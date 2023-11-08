@@ -3,7 +3,6 @@
 .follow__page {
   display: flex;
   justify-content: center;
-  height: 100%;
 }
 
 .follow__container {
@@ -68,8 +67,8 @@
 @media screen and (min-width: 900px) {
   .follow__container {
     width: 700px;
-    margin: 100px;
-    padding: 50px;
+    margin: 150px 50px;
+    padding: 20px 0;
   }
 }
 
