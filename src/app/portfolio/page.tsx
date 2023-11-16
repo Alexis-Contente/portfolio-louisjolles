@@ -1,7 +1,7 @@
 import styles from "../../../public/style/portfolio.module.css";
 import Image from "next/image";
 import Musics from "../../data/images/microphone.jpg";
-import Photos from "../../data/images/appareil_photo.jpg";
+import Photos from "../../data/images/appareilphoto.jpg";
 import Link from "next/link";
 
 export default function Portfolio() {

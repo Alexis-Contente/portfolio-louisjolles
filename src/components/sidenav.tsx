@@ -5,7 +5,10 @@ export default function Sidenav() {
   return (
     <ul className={styles.nav__list}>
       <li className={styles.list__item}>
-        <a href="/portfolio">Portfolio</a>
+        <a href="/musics">Music</a>
+      </li>
+      <li className={styles.list__item}>
+        <a href="/photos">Photo</a>
       </li>
       <li className={styles.list__item}>
         <Link href="/about">About</Link>
